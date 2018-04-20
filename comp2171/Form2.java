@@ -16,8 +16,9 @@ import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.FormSpecs;
 import com.jgoodies.forms.layout.RowSpec;
 import javax.swing.JButton;
+import javax.swing.JScrollBar;
 
-public class Form extends JFrame {
+public class Form2 extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -37,6 +38,10 @@ public class Form extends JFrame {
 	private JTextField textField_14;
 	private JTextField textField_15;
 	private JTextField textField_16;
+	private JTextField textField_17;
+	private JTextField textField_18;
+	private JTextField textField_19;
+	private JTextField textField_20;
 
 	/**
 	 * Launch the application.
@@ -45,7 +50,7 @@ public class Form extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Form frame = new Form();
+					Form2 frame = new Form2();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -57,244 +62,248 @@ public class Form extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Form() {
+	public Form2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1112, 1953);
+		setBounds(100, 100, 1112, 1454);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("MINISTRY OF HEALTH/UNIVERSITY HOSPITAL OF THE WEST INDIES");
+		JLabel lblNewLabel = new JLabel("MINISTRY OF HEALTH");
 		lblNewLabel.setBounds(31, 35, 829, 33);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblApplicationForPreregistration = new JLabel("APPLICATION FOR PRE-REGISTRATION (INTERN) POSITION");
+		JLabel lblApplicationForPreregistration = new JLabel("APPLICATION FORM FOR A SENIOR HOUSE OFFICER POSITION (SHO)");
 		lblApplicationForPreregistration.setHorizontalAlignment(SwingConstants.CENTER);
-		lblApplicationForPreregistration.setBounds(74, 98, 726, 33);
+		lblApplicationForPreregistration.setBounds(74, 98, 843, 33);
 		contentPane.add(lblApplicationForPreregistration);
 		
 		JLabel lblNewLabel_1 = new JLabel("A. Personal Data");
-		lblNewLabel_1.setBounds(31, 169, 196, 33);
+		lblNewLabel_1.setBounds(31, 159, 196, 33);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Name:");
-		lblNewLabel_2.setBounds(31, 235, 79, 33);
+		lblNewLabel_2.setBounds(31, 207, 79, 33);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Nationality:");
-		lblNewLabel_3.setBounds(31, 307, 135, 33);
+		lblNewLabel_3.setBounds(31, 252, 135, 33);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Address:");
-		lblNewLabel_4.setBounds(31, 382, 104, 33);
+		lblNewLabel_4.setBounds(31, 308, 104, 33);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("Email Address:");
-		lblNewLabel_5.setBounds(31, 443, 176, 33);
+		lblNewLabel_5.setBounds(31, 369, 176, 33);
 		contentPane.add(lblNewLabel_5);
 		
 		textField = new JTextField();
-		textField.setBounds(275, 232, 236, 39);
+		textField.setBounds(275, 204, 236, 39);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(275, 304, 236, 39);
+		textField_1.setBounds(275, 252, 236, 39);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(275, 371, 777, 39);
+		textField_2.setBounds(275, 305, 777, 39);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
 		textField_3 = new JTextField();
-		textField_3.setBounds(275, 440, 236, 39);
+		textField_3.setBounds(275, 366, 777, 39);
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
 		JLabel lblNewLabel_6 = new JLabel("Age:");
-		lblNewLabel_6.setBounds(537, 235, 55, 33);
+		lblNewLabel_6.setBounds(534, 207, 55, 33);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("Sex:");
-		lblNewLabel_7.setBounds(537, 314, 52, 33);
+		lblNewLabel_7.setBounds(537, 255, 52, 33);
 		contentPane.add(lblNewLabel_7);
 		
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Male");
-		rdbtnNewRadioButton.setBounds(628, 306, 99, 41);
+		rdbtnNewRadioButton.setBounds(611, 252, 99, 41);
 		contentPane.add(rdbtnNewRadioButton);
 		
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Female");
-		rdbtnNewRadioButton_1.setBounds(756, 306, 129, 41);
+		rdbtnNewRadioButton_1.setBounds(728, 251, 129, 41);
 		contentPane.add(rdbtnNewRadioButton_1);
 		
 		textField_4 = new JTextField();
-		textField_4.setBounds(628, 232, 236, 39);
+		textField_4.setBounds(615, 204, 95, 39);
 		contentPane.add(textField_4);
 		textField_4.setColumns(10);
 		
 		JLabel lblNewLabel_8 = new JLabel("Phone No.:(H)");
-		lblNewLabel_8.setBounds(31, 520, 171, 33);
+		lblNewLabel_8.setBounds(25, 436, 171, 33);
 		contentPane.add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_9 = new JLabel("Next of Kin:");
-		lblNewLabel_9.setBounds(31, 573, 141, 33);
+		lblNewLabel_9.setBounds(25, 481, 141, 33);
 		contentPane.add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_10 = new JLabel("Address of Next Kin:");
-		lblNewLabel_10.setBounds(31, 626, 243, 33);
+		lblNewLabel_10.setBounds(25, 542, 243, 33);
 		contentPane.add(lblNewLabel_10);
 		
-		JLabel lblNewLabel_11 = new JLabel("Medical School of Graduation:");
-		lblNewLabel_11.setBounds(31, 679, 355, 33);
+		JLabel lblNewLabel_11 = new JLabel("Year of Graduation:");
+		lblNewLabel_11.setBounds(26, 606, 355, 33);
 		contentPane.add(lblNewLabel_11);
 		
-		JLabel lblNewLabel_12 = new JLabel("Year of Graduation:");
-		lblNewLabel_12.setBounds(31, 732, 235, 33);
+		JLabel lblNewLabel_12 = new JLabel("Training Institution:");
+		lblNewLabel_12.setBounds(25, 666, 236, 33);
 		contentPane.add(lblNewLabel_12);
 		
 		textField_5 = new JTextField();
-		textField_5.setBounds(275, 517, 236, 39);
+		textField_5.setBounds(275, 433, 236, 39);
 		contentPane.add(textField_5);
 		textField_5.setColumns(10);
 		
 		textField_6 = new JTextField();
-		textField_6.setBounds(275, 570, 236, 39);
+		textField_6.setBounds(275, 481, 236, 39);
 		contentPane.add(textField_6);
 		textField_6.setColumns(10);
 		
 		textField_7 = new JTextField();
-		textField_7.setBounds(275, 623, 777, 39);
+		textField_7.setBounds(275, 539, 777, 39);
 		contentPane.add(textField_7);
 		textField_7.setColumns(10);
 		
 		textField_8 = new JTextField();
-		textField_8.setBounds(275, 676, 236, 39);
+		textField_8.setBounds(275, 603, 236, 39);
 		contentPane.add(textField_8);
 		textField_8.setColumns(10);
 		
 		textField_9 = new JTextField();
-		textField_9.setBounds(275, 729, 236, 39);
+		textField_9.setBounds(275, 663, 777, 39);
 		contentPane.add(textField_9);
 		textField_9.setColumns(10);
 		
 		JLabel lblNewLabel_13 = new JLabel("Cell:");
-		lblNewLabel_13.setBounds(537, 520, 52, 33);
+		lblNewLabel_13.setBounds(537, 433, 52, 33);
 		contentPane.add(lblNewLabel_13);
 		
 		JLabel lblNewLabel_14 = new JLabel("Marital Status:");
-		lblNewLabel_14.setBounds(741, 520, 172, 33);
+		lblNewLabel_14.setBounds(751, 436, 172, 33);
 		contentPane.add(lblNewLabel_14);
 		
 		textField_10 = new JTextField();
-		textField_10.setBounds(606, 517, 132, 39);
+		textField_10.setBounds(611, 433, 132, 39);
 		contentPane.add(textField_10);
 		textField_10.setColumns(10);
 		
 		textField_11 = new JTextField();
-		textField_11.setBounds(923, 517, 129, 39);
+		textField_11.setBounds(925, 433, 127, 39);
 		contentPane.add(textField_11);
 		textField_11.setColumns(10);
 		
 		JLabel lblNewLabel_15 = new JLabel("Relationship:");
-		lblNewLabel_15.setBounds(537, 573, 154, 33);
+		lblNewLabel_15.setBounds(534, 484, 154, 33);
 		contentPane.add(lblNewLabel_15);
 		
 		textField_12 = new JTextField();
-		textField_12.setBounds(606, 570, 446, 39);
+		textField_12.setBounds(611, 481, 441, 39);
 		contentPane.add(textField_12);
 		textField_12.setColumns(10);
 		
-		JLabel lblNewLabel_16 = new JLabel("Country:");
-		lblNewLabel_16.setBounds(537, 679, 103, 33);
+		JLabel lblNewLabel_16 = new JLabel("Nationality:");
+		lblNewLabel_16.setBounds(728, 207, 103, 33);
 		contentPane.add(lblNewLabel_16);
 		
 		JLabel lblNewLabel_17 = new JLabel("Degree:");
-		lblNewLabel_17.setBounds(537, 732, 115, 33);
+		lblNewLabel_17.setBounds(534, 606, 115, 33);
 		contentPane.add(lblNewLabel_17);
 		
 		textField_13 = new JTextField();
-		textField_13.setBounds(606, 729, 374, 39);
+		textField_13.setBounds(612, 603, 440, 39);
 		textField_13.setText("");
 		contentPane.add(textField_13);
 		textField_13.setColumns(10);
 		
 		textField_14 = new JTextField();
-		textField_14.setBounds(606, 676, 446, 39);
+		textField_14.setBounds(840, 204, 212, 39);
 		contentPane.add(textField_14);
 		textField_14.setColumns(10);
 		
-		JLabel lblNewLabel_18 = new JLabel("B. Approved health facilities for assignment");
-		lblNewLabel_18.setBounds(31, 823, 513, 33);
+		JLabel lblNewLabel_18 = new JLabel("B. The SHO programme is for 12 months with a mandatory 6 months in Primary Care.");
+		lblNewLabel_18.setBounds(31, 823, 1606, 33);
 		contentPane.add(lblNewLabel_18);
 		
-		JLabel lblNewLabel_19 = new JLabel("1. University Hospital of the West Indies");
-		lblNewLabel_19.setBounds(112, 884, 115, 33);
+		JLabel lblNewLabel_19 = new JLabel(" See Listing attached for assignment preferences.");
+		lblNewLabel_19.setBounds(64, 884, 585, 33);
 		contentPane.add(lblNewLabel_19);
 		
-		JLabel lblNewLabel_20 = new JLabel("2. Ministry of Health Hospitals");
-		lblNewLabel_20.setBounds(112, 945, 354, 33);
+		JLabel lblNewLabel_20 = new JLabel("(i) 1st Rotation");
+		lblNewLabel_20.setBounds(31, 945, 354, 33);
 		contentPane.add(lblNewLabel_20);
 		
-		JLabel lblForTwo = new JLabel("For two (2) the choices are as follows:");
-		lblForTwo.setBounds(31, 1006, 455, 33);
+		JLabel lblForTwo = new JLabel("Primary Care Institution:");
+		lblForTwo.setBounds(74, 1006, 455, 33);
 		contentPane.add(lblForTwo);
 		
-		JLabel lblNewLabel_21 = new JLabel("(i) Kingston Region (KPH, VJH, BHC)");
-		lblNewLabel_21.setBounds(112, 1067, 431, 33);
+		JLabel lblNewLabel_21 = new JLabel("1st Choice Institution:");
+		lblNewLabel_21.setBounds(74, 1067, 431, 33);
 		contentPane.add(lblNewLabel_21);
 		
-		JLabel lblNewLabel_22 = new JLabel("(ii) St. Anns Bay Hospital ");
-		lblNewLabel_22.setBounds(112, 1128, 300, 33);
+		JLabel lblNewLabel_22 = new JLabel("(ii) 2nd Rotation");
+		lblNewLabel_22.setBounds(31, 1128, 300, 33);
 		contentPane.add(lblNewLabel_22);
 		
-		JLabel lblNewLabel_23 = new JLabel("(iii) Cornwall Regional Hospital");
-		lblNewLabel_23.setBounds(112, 1189, 361, 33);
+		JLabel lblNewLabel_23 = new JLabel("Primary Care Institution:");
+		lblNewLabel_23.setBounds(74, 1189, 361, 33);
 		contentPane.add(lblNewLabel_23);
 		
-		JLabel lblNewLabel_24 = new JLabel("(iv) Mandeville Regional Hospital");
-		lblNewLabel_24.setBounds(112, 1250, 384, 33);
+		JLabel lblNewLabel_24 = new JLabel("2nd Choice Institution:");
+		lblNewLabel_24.setBounds(74, 1250, 384, 33);
 		contentPane.add(lblNewLabel_24);
 		
-		JLabel lblNewLabel_25 = new JLabel("(v) Spanish Town Hospital");
-		lblNewLabel_25.setBounds(112, 1311, 310, 33);
-		contentPane.add(lblNewLabel_25);
-		
-		JLabel lblNewLabel_26 = new JLabel("(vi) May Pen Hospital");
-		lblNewLabel_26.setBounds(112, 1372, 250, 33);
-		contentPane.add(lblNewLabel_26);
-		
-		JLabel lblNewLabel_27 = new JLabel("(vii) Savanna-la-mar Hospital");
-		lblNewLabel_27.setBounds(112, 1433, 343, 33);
-		contentPane.add(lblNewLabel_27);
-		
-		JLabel lblNewLabel_28 = new JLabel("(viii) Annotto Bay Hospital");
-		lblNewLabel_28.setBounds(112, 1494, 307, 33);
-		contentPane.add(lblNewLabel_28);
-		
-		JLabel lblNewLabel_29 = new JLabel("PLease indicate your primary choice:");
-		lblNewLabel_29.setBounds(112, 1555, 433, 33);
-		contentPane.add(lblNewLabel_29);
-		
-		JLabel lblNewLabel_30 = new JLabel("Please indicate your secondary choice:");
-		lblNewLabel_30.setBounds(112, 1616, 455, 33);
-		contentPane.add(lblNewLabel_30);
-		
 		JButton btnNewButton = new JButton("Submit");
-		btnNewButton.setBounds(871, 1689, 171, 41);
+		btnNewButton.setBounds(881, 1311, 171, 41);
 		contentPane.add(btnNewButton);
 		
 		textField_15 = new JTextField();
-		textField_15.setBounds(624, 1552, 418, 39);
+		textField_15.setBounds(634, 1003, 418, 39);
 		contentPane.add(textField_15);
 		textField_15.setColumns(10);
 		
 		textField_16 = new JTextField();
-		textField_16.setBounds(624, 1613, 418, 39);
+		textField_16.setBounds(634, 1064, 418, 39);
 		contentPane.add(textField_16);
 		textField_16.setColumns(10);
+		
+		JLabel lblNewLabel_31 = new JLabel("Period of Internship in Jamaica:");
+		lblNewLabel_31.setBounds(26, 727, 377, 33);
+		contentPane.add(lblNewLabel_31);
+		
+		JLabel lblNewLabel_32 = new JLabel("Date of Full registration with the MCJ");
+		lblNewLabel_32.setBounds(25, 778, 439, 33);
+		contentPane.add(lblNewLabel_32);
+		
+		textField_17 = new JTextField();
+		textField_17.setBounds(275, 724, 777, 39);
+		contentPane.add(textField_17);
+		textField_17.setColumns(10);
+		
+		textField_18 = new JTextField();
+		textField_18.setBounds(275, 775, 777, 39);
+		contentPane.add(textField_18);
+		textField_18.setColumns(10);
+		
+		textField_19 = new JTextField();
+		textField_19.setBounds(634, 1186, 418, 39);
+		contentPane.add(textField_19);
+		textField_19.setColumns(10);
+		
+		textField_20 = new JTextField();
+		textField_20.setBounds(634, 1247, 418, 39);
+		contentPane.add(textField_20);
+		textField_20.setColumns(10);
 	}
 }
