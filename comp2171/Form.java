@@ -16,6 +16,7 @@ import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.FormSpecs;
 import com.jgoodies.forms.layout.RowSpec;
 import javax.swing.JButton;
+import java.awt.Scrollbar;
 
 public class Form extends JFrame {
 
@@ -296,5 +297,9 @@ public class Form extends JFrame {
 		textField_16.setBounds(624, 1613, 418, 39);
 		contentPane.add(textField_16);
 		textField_16.setColumns(10);
+		
+		Scrollbar scrollbar = new Scrollbar();
+		scrollbar.setBounds(1064, 0, 16, 1880);
+		contentPane.add(scrollbar);
 	}
 }

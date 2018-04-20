@@ -305,5 +305,9 @@ public class Form2 extends JFrame {
 		textField_20.setBounds(634, 1247, 418, 39);
 		contentPane.add(textField_20);
 		textField_20.setColumns(10);
+		
+		JScrollBar scrollBar = new JScrollBar();
+		scrollBar.setBounds(1062, 0, 18, 1366);
+		contentPane.add(scrollBar);
 	}
 }
